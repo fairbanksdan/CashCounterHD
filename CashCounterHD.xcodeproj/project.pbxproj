@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65FF8AC1912FA5D005CC2FC /* FDNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */; };
+		D65FF8AD1912FA5D005CC2FC /* FDNumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65FF8AB1912FA5D005CC2FC /* FDNumberPad.xib */; };
+		D65FF8AF191403C1005CC2FC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65FF8AE191403C1005CC2FC /* iAd.framework */; };
 		D6C3BE4B1912DA0000B27501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3BE4A1912DA0000B27501 /* Foundation.framework */; };
 		D6C3BE4D1912DA0000B27501 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3BE4C1912DA0000B27501 /* CoreGraphics.framework */; };
 		D6C3BE4F1912DA0000B27501 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3BE4E1912DA0000B27501 /* UIKit.framework */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D65FF8A91912FA5D005CC2FC /* FDNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDNumberPad.h; sourceTree = "<group>"; };
+		D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNumberPad.m; sourceTree = "<group>"; };
+		D65FF8AB1912FA5D005CC2FC /* FDNumberPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDNumberPad.xib; sourceTree = "<group>"; };
+		D65FF8AE191403C1005CC2FC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D6C3BE471912DA0000B27501 /* CashCounterHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashCounterHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C3BE4A1912DA0000B27501 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6C3BE4C1912DA0000B27501 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65FF8AF191403C1005CC2FC /* iAd.framework in Frameworks */,
 				D6C3BE4D1912DA0000B27501 /* CoreGraphics.framework in Frameworks */,
 				D6C3BE4F1912DA0000B27501 /* UIKit.framework in Frameworks */,
 				D6C3BE4B1912DA0000B27501 /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		D6C3BE491912DA0000B27501 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D65FF8AE191403C1005CC2FC /* iAd.framework */,
 				D6C3BE4A1912DA0000B27501 /* Foundation.framework */,
 				D6C3BE4C1912DA0000B27501 /* CoreGraphics.framework */,
 				D6C3BE4E1912DA0000B27501 /* UIKit.framework */,
@@ -117,6 +126,9 @@
 				D6C3BE5C1912DA0000B27501 /* Main.storyboard */,
 				D6C3BE5F1912DA0000B27501 /* FDViewController.h */,
 				D6C3BE601912DA0000B27501 /* FDViewController.m */,
+				D65FF8A91912FA5D005CC2FC /* FDNumberPad.h */,
+				D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */,
+				D65FF8AB1912FA5D005CC2FC /* FDNumberPad.xib */,
 				D6C3BE621912DA0000B27501 /* Images.xcassets */,
 				D6C3BE511912DA0000B27501 /* Supporting Files */,
 			);
@@ -229,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65FF8AD1912FA5D005CC2FC /* FDNumberPad.xib in Resources */,
 				D6C3BE631912DA0000B27501 /* Images.xcassets in Resources */,
 				D6C3BE551912DA0000B27501 /* InfoPlist.strings in Resources */,
 				D6C3BE5E1912DA0000B27501 /* Main.storyboard in Resources */,
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65FF8AC1912FA5D005CC2FC /* FDNumberPad.m in Sources */,
 				D6C3BE5B1912DA0000B27501 /* FDAppDelegate.m in Sources */,
 				D6C3BE571912DA0000B27501 /* main.m in Sources */,
 				D6C3BE611912DA0000B27501 /* FDViewController.m in Sources */,
@@ -459,6 +473,7 @@
 				D6C3BE7B1912DA0000B27501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6C3BE7C1912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHDTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +482,7 @@
 				D6C3BE7E1912DA0000B27501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
