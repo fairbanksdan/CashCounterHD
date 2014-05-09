@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, FDNumberPadOptions) {
+    FDNumberPadOptionsDefault,
+    FDNumberPadOptionsDenominationIcons
+};
+
 @interface FDNumberPad : UIView
 
 @property (weak,nonatomic) UIViewController *VC;
 
 +(FDNumberPad *)defaultFDNumberPad;
++(FDNumberPad *)denominationOptionsFDNumberPad;
 
 @end

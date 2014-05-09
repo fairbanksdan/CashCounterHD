@@ -15,7 +15,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *nickelTF;
 @property (weak, nonatomic) IBOutlet UITextField *dimeTF;
 @property (weak, nonatomic) IBOutlet UITextField *quarterTF;
+@property (weak, nonatomic) IBOutlet UITextField *fiftyCentTF;
 @property (weak, nonatomic) IBOutlet UITextField *singleDollarTF;
+@property (weak, nonatomic) IBOutlet UITextField *twoDollarTF;
 @property (weak, nonatomic) IBOutlet UITextField *fiveDollarTF;
 @property (weak, nonatomic) IBOutlet UITextField *tenDollarTF;
 @property (weak, nonatomic) IBOutlet UITextField *twentyDollarTF;
@@ -26,7 +28,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *nickelLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *quarterLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fiftyCentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *singleDollarLabel;
+@property (weak, nonatomic) IBOutlet UILabel *twoDollarLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fiveDollarLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tenDollarLabel;
 @property (weak, nonatomic) IBOutlet UILabel *twentyDollarLabel;

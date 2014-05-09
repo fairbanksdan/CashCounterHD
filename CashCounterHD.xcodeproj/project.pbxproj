@@ -10,6 +10,8 @@
 		D65FF8AC1912FA5D005CC2FC /* FDNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */; };
 		D65FF8AD1912FA5D005CC2FC /* FDNumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65FF8AB1912FA5D005CC2FC /* FDNumberPad.xib */; };
 		D65FF8AF191403C1005CC2FC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65FF8AE191403C1005CC2FC /* iAd.framework */; };
+		D65FF8B119141583005CC2FC /* FDNumberPadDemoninations.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65FF8B019141583005CC2FC /* FDNumberPadDemoninations.xib */; };
+		D65FF8B3191433B6005CC2FC /* Screen Shot 2014-05-02 at 1.12.12 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D65FF8B2191433B6005CC2FC /* Screen Shot 2014-05-02 at 1.12.12 PM.png */; };
 		D6C3BE4B1912DA0000B27501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3BE4A1912DA0000B27501 /* Foundation.framework */; };
 		D6C3BE4D1912DA0000B27501 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3BE4C1912DA0000B27501 /* CoreGraphics.framework */; };
 		D6C3BE4F1912DA0000B27501 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3BE4E1912DA0000B27501 /* UIKit.framework */; };
@@ -41,6 +43,8 @@
 		D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNumberPad.m; sourceTree = "<group>"; };
 		D65FF8AB1912FA5D005CC2FC /* FDNumberPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDNumberPad.xib; sourceTree = "<group>"; };
 		D65FF8AE191403C1005CC2FC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D65FF8B019141583005CC2FC /* FDNumberPadDemoninations.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDNumberPadDemoninations.xib; sourceTree = "<group>"; };
+		D65FF8B2191433B6005CC2FC /* Screen Shot 2014-05-02 at 1.12.12 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2014-05-02 at 1.12.12 PM.png"; sourceTree = "<group>"; };
 		D6C3BE471912DA0000B27501 /* CashCounterHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashCounterHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C3BE4A1912DA0000B27501 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6C3BE4C1912DA0000B27501 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +133,7 @@
 				D65FF8A91912FA5D005CC2FC /* FDNumberPad.h */,
 				D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */,
 				D65FF8AB1912FA5D005CC2FC /* FDNumberPad.xib */,
+				D65FF8B019141583005CC2FC /* FDNumberPadDemoninations.xib */,
 				D6C3BE621912DA0000B27501 /* Images.xcassets */,
 				D6C3BE511912DA0000B27501 /* Supporting Files */,
 			);
@@ -138,6 +143,7 @@
 		D6C3BE511912DA0000B27501 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D65FF8B2191433B6005CC2FC /* Screen Shot 2014-05-02 at 1.12.12 PM.png */,
 				D6C3BE521912DA0000B27501 /* CashCounterHD-Info.plist */,
 				D6C3BE531912DA0000B27501 /* InfoPlist.strings */,
 				D6C3BE561912DA0000B27501 /* main.m */,
@@ -243,7 +249,9 @@
 			files = (
 				D65FF8AD1912FA5D005CC2FC /* FDNumberPad.xib in Resources */,
 				D6C3BE631912DA0000B27501 /* Images.xcassets in Resources */,
+				D65FF8B3191433B6005CC2FC /* Screen Shot 2014-05-02 at 1.12.12 PM.png in Resources */,
 				D6C3BE551912DA0000B27501 /* InfoPlist.strings in Resources */,
+				D65FF8B119141583005CC2FC /* FDNumberPadDemoninations.xib in Resources */,
 				D6C3BE5E1912DA0000B27501 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

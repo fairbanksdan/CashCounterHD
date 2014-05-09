@@ -17,7 +17,17 @@
 @implementation FDNumberPad
 
 @synthesize targetTextInput;
-
++(FDNumberPad *)denominationOptionsFDNumberPad
+{
+    static FDNumberPad *defaultFDNumberPad = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        defaultFDNumberPad = [[[NSBundle mainBundle] loadNibNamed:@"FDNumberPadDemoninations" owner:self options:nil] objectAtIndex:0];
+    });
+    
+    return defaultFDNumberPad;
+}
 +(FDNumberPad *)defaultFDNumberPad {
     static FDNumberPad *defaultFDNumberPad = nil;
     static dispatch_once_t onceToken;
@@ -46,22 +56,13 @@
 }
 
 - (void)addObservers {
-    // Keep track of the textView/Field that we are editing
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(editingDidBegin:)
-                                                 name:UITextFieldTextDidBeginEditingNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(editingDidBegin:)
-                                                 name:UITextViewTextDidBeginEditingNotification
-                                               object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(editingDidEnd:)
                                                  name:UITextFieldTextDidEndEditingNotification
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(editingDidEnd:)
-                                                 name:UITextViewTextDidEndEditingNotification
+                                             selector:@selector(editingDidBegin:)
+                                                 name:UITextFieldTextDidBeginEditingNotification
                                                object:nil];
 }
 
@@ -70,13 +71,7 @@
                                                     name:UITextFieldTextDidBeginEditingNotification
                                                   object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UITextViewTextDidBeginEditingNotification
-                                                  object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UITextFieldTextDidEndEditingNotification
-                                                  object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UITextViewTextDidEndEditingNotification
                                                   object:nil];
     self.targetTextInput = nil;
 }
@@ -160,6 +155,18 @@
     //            [self.targetTextInput resignFirstResponder];
     //        }
 }
+
+//- (IBAction)numberpadNextPressed:(UIButton *)sender {
+//    
+//    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"nextPressed" object:nil];
+//    
+////    if (self.currentTextField.tag == 0)
+////    {
+////        
+////    }
+//    
+//}
 
 #pragma mark - text replacement routines
 

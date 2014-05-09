@@ -23,7 +23,9 @@
     float _nickelCount;
     float _dimeCount;
     float _quarterCount;
+    float _fiftyCentCount;
     
+    float _twoDollarCount;
     float _singleDollarCount;
     float _fiveDollarCount;
     float _tenDollarCount;
@@ -43,13 +45,40 @@
     // The "normal" numberpad
     self.pennyTF.inputView   = [FDNumberPad defaultFDNumberPad];
     self.nickelTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.dimeTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.quarterTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.fiftyCentTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.singleDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.twoDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.fiveDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.tenDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.twentyDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.fiftyDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
+    self.hundredDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(textFieldShouldReturn:)
                                                  name:@"nextPressed"
                                                object:nil];
+    
+    _pennyTF.layer.borderColor=[[UIColor colorWithRed:0.85 green:0.85 blue:0.85 alpha:1] CGColor];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.0];
+    [UIView setAnimationDelay:0.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    
+    [_pennyTF becomeFirstResponder];
+    
+    [UIView commitAnimations];
+
+    [super viewDidAppear:animated];
+
+}
 - (void)viewDidUnload
 {
     _pennyTF = nil;
@@ -98,11 +127,25 @@
     
     [self Updatelabels];
 }
+- (IBAction)fiftyCentCounterTF:(id)sender {
+    _str = [_fiftyCentTF text];
+    
+    _fiftyCentCount = [_str integerValue]*0.5;
+    
+    [self Updatelabels];
+}
 
 - (IBAction)singleDollarCounterTF:(id)sender {
     _str = [_singleDollarTF text];
     
     _singleDollarCount = [_str integerValue];
+    
+    [self Updatelabels];
+}
+- (IBAction)twoDollarCounterTF:(id)sender {
+    _str = [_twoDollarTF text];
+    
+    _twoDollarCount = [_str integerValue]*2;
     
     [self Updatelabels];
 }
@@ -151,7 +194,7 @@
 
 -(void)Updatelabels
 {
-    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_singleDollarCount+_fiftyDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
+    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_fiftyCentCount+_singleDollarCount+_twoDollarCount+_fiftyDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
     
     NSNumberFormatter *currencyFormatter = [[NSNumberFormatter alloc] init];
     [currencyFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
@@ -161,7 +204,9 @@
     self.nickelLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_nickelCount]]];
     self.dimeLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_dimeCount]]];
     self.quarterLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_quarterCount]]];
+    self.fiftyCentLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiftyCentCount]]];
     self.singleDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_singleDollarCount]]];
+    self.twoDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twoDollarCount]]];
     self.fiveDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiveDollarCount]]];
     self.tenDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_tenDollarCount]]];
     self.twentyDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twentyDollarCount]]];
@@ -179,7 +224,9 @@
     _nickelCount = 0;
     _dimeCount = 0;
     _quarterCount = 0;
+    _fiftyCentCount = 0;
     _singleDollarCount = 0;
+    _twoDollarCount = 0;
     _fiveDollarCount = 0;
     _tenDollarCount = 0;
     _twentyDollarCount = 0;
@@ -191,7 +238,9 @@
     self.nickelLabel.text = [NSString stringWithFormat:@"%.02f",_nickelCount];
     self.dimeLabel.text = [NSString stringWithFormat:@"%.02f",_dimeCount];
     self.quarterLabel.text = [NSString stringWithFormat:@"%.02f",_quarterCount];
+    self.fiftyCentLabel.text = [NSString stringWithFormat:@"%.02f",_fiftyCentCount];
     self.singleDollarLabel.text = [NSString stringWithFormat:@"%.02f",_singleDollarCount];
+    self.twoDollarLabel.text = [NSString stringWithFormat:@"%.02f",_twoDollarCount];
     self.fiveDollarLabel.text = [NSString stringWithFormat:@"%.02f",_fiveDollarCount];
     self.tenDollarLabel.text = [NSString stringWithFormat:@"%.02f",_tenDollarCount];
     self.twentyDollarLabel.text = [NSString stringWithFormat:@"%.02f",_twentyDollarCount];
@@ -203,7 +252,9 @@
     self.nickelTF.text = emptyString;
     self.dimeTF.text = emptyString;
     self.quarterTF.text = emptyString;
+    self.fiftyCentTF.text = emptyString;
     self.singleDollarTF.text = emptyString;
+    self.twoDollarTF.text = emptyString;
     self.fiveDollarTF.text = emptyString;
     self.tenDollarTF.text = emptyString;
     self.twentyDollarTF.text = emptyString;
@@ -215,13 +266,30 @@
 {
     NSLog(@" should return");
     
-    if (self.currentTextField.tag == 0)
-    {
-        [self.pennyTF becomeFirstResponder];
-        self.currentTextField = self.pennyTF;
+    NSInteger nextTag = textField.tag + 1;
+    
+    UIResponder *nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
         
+        [nextResponder becomeFirstResponder];
     }
-    return YES;
+    else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
+    
+//    if (self.currentTextField.tag == 0)
+//    {
+//        [self.nickelTF becomeFirstResponder];
+//    } else if (self.currentTextField.tag == 1)
+//    {
+//        [self.dimeTF becomeFirstResponder];
+//    } else if (self.currentTextField.tag == 2)
+//    {
+//        [self.quarterTF becomeFirstResponder];
+//    }
+//    return YES;
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
@@ -237,30 +305,6 @@
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView
 {
     return YES;
-}
-
-#pragma mark iAd Delegate Methods
-
--(void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
-    [UIView beginAnimations:nil context:nil];
-    
-    [UIView setAnimationDuration:1];
-    
-    [banner setAlpha:1];
-    
-    [UIView commitAnimations];
-}
-
--(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
-{
-    [UIView beginAnimations:nil context:nil];
-    
-    [UIView setAnimationDuration:1];
-    
-    [banner setAlpha:0];
-    
-    [UIView commitAnimations];
 }
 
 @end
