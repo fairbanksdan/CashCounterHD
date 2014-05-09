@@ -11,6 +11,7 @@
 
 @interface FDViewController : UIViewController <ADBannerViewDelegate>
 
+
 @property (weak, nonatomic) IBOutlet UITextField *pennyTF;
 @property (weak, nonatomic) IBOutlet UITextField *nickelTF;
 @property (weak, nonatomic) IBOutlet UITextField *dimeTF;

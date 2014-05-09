@@ -61,7 +61,30 @@
                                                  name:@"nextPressed"
                                                object:nil];
     
-    _pennyTF.layer.borderColor=[[UIColor colorWithRed:0.85 green:0.85 blue:0.85 alpha:1] CGColor];
+    _pennyTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _pennyTF.layer.borderWidth = 1;
+    _nickelTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _nickelTF.layer.borderWidth = 1;
+    _dimeTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _dimeTF.layer.borderWidth = 1;
+    _quarterTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _quarterTF.layer.borderWidth = 1;
+    _fiftyCentTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _fiftyCentTF.layer.borderWidth = 1;
+    _singleDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _singleDollarTF.layer.borderWidth = 1;
+    _twoDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _twoDollarTF.layer.borderWidth = 1;
+    _fiveDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _fiveDollarTF.layer.borderWidth = 1;
+    _tenDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _tenDollarTF.layer.borderWidth = 1;
+    _twentyDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _twentyDollarTF.layer.borderWidth = 1;
+    _fiftyDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _fiftyDollarTF.layer.borderWidth = 1;
+    _hundredDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
+    _hundredDollarTF.layer.borderWidth = 1;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -194,7 +217,7 @@
 
 -(void)Updatelabels
 {
-    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_fiftyCentCount+_singleDollarCount+_twoDollarCount+_fiftyDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
+    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_fiftyCentCount+_singleDollarCount+_twoDollarCount+_fiveDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
     
     NSNumberFormatter *currencyFormatter = [[NSNumberFormatter alloc] init];
     [currencyFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
@@ -216,6 +239,31 @@
     self.grandTotalLabel.text = [NSString stringWithFormat:@"$%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_grandTotalCount]]];
     
 }
+
+//- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+//    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_fiftyCentCount+_singleDollarCount+_twoDollarCount+_fiftyDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
+//    
+//    NSNumberFormatter *currencyFormatter = [[NSNumberFormatter alloc] init];
+//    [currencyFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+//    [currencyFormatter setCurrencySymbol:@""];
+//    
+//    self.pennyLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_pennyCount]]];
+//    self.nickelLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_nickelCount]]];
+//    self.dimeLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_dimeCount]]];
+//    self.quarterLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_quarterCount]]];
+//    self.fiftyCentLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiftyCentCount]]];
+//    self.singleDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_singleDollarCount]]];
+//    self.twoDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twoDollarCount]]];
+//    self.fiveDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiveDollarCount]]];
+//    self.tenDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_tenDollarCount]]];
+//    self.twentyDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twentyDollarCount]]];
+//    self.fiftyDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiftyDollarCount]]];
+//    self.hundredDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_hundredDollarCount]]];
+//    
+//    self.grandTotalLabel.text = [NSString stringWithFormat:@"$%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_grandTotalCount]]];
+//    
+//    return YES;
+//}
 
 - (IBAction)resetButtonPressed:(id)sender {
     NSString *emptyString = [NSString stringWithFormat:@""];
@@ -307,4 +355,6 @@
     return YES;
 }
 
+- (IBAction)pennyTF:(id)sender {
+}
 @end
