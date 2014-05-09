@@ -15,6 +15,12 @@
 
 @property (strong,nonatomic) NSArray *textFields;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *denominationsView;
+
+@property (weak, nonatomic) IBOutlet FDNumberPad *NumberPad;
+@property (weak, nonatomic) IBOutlet UIView *textFieldsView;
+@property (weak, nonatomic) IBOutlet UIView *labelTotalsView;
+
 @end
 
 @implementation FDViewController
@@ -345,16 +351,32 @@
     self.currentTextField = textField;
     return YES;
 }
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+
+//-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+//{
+//    
+//}
+
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    return YES;
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+
+        self.denominationsView.frame = CGRectMake(0, 0,624,768);
+        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
+        self.textFieldsView.frame = CGRectMake(200, 101, 240, 488);
+        self.labelTotalsView.frame = CGRectMake(420, 101, 215, 551);
+    }
 }
 
-- (BOOL)textViewShouldEndEditing:(UITextView *)textView
-{
-    return YES;
-}
+//-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+//{
+//    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+//        NSLog(@"rotate landscape left");
+//        
+//        CGFloat height = self.scrollView.frame.size.height;
+//        self.scrollView.frame = CGRectMake(0, 0,400,300);
+//    }
+//}
 
-- (IBAction)pennyTF:(id)sender {
-}
+
 @end

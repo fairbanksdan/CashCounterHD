@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="84Q-Rv-Kz8" userLabel="NumberPad" customClass="FDNumberPad">
-            <rect key="frame" x="0.0" y="0.0" width="768" height="352"/>
+            <rect key="frame" x="0.0" y="0.0" width="768" height="0.0"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
