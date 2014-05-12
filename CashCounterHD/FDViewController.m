@@ -105,24 +105,6 @@
     _fiftyDollarTF.layer.borderWidth = 1;
     _hundredDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
     _hundredDollarTF.layer.borderWidth = 1;
-    
-    
-    
-//    if (self.interfaceOrientation == UIDeviceOrientationLandscapeLeft) {
-//        
-//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
-//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
-//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
-//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
-//        
-//    } else if (UIDeviceOrientationLandscapeRight)
-//    {
-//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
-//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
-//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
-//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
-//    }
-//}
 
 }
 
@@ -154,13 +136,6 @@
 
     [super viewDidAppear:animated];
 
-}
-- (void)viewDidUnload
-{
-    _pennyTF = nil;
-    _nickelTF  = nil;
-    
-    [super viewDidUnload];
 }
 
 - (void)didReceiveMemoryWarning
@@ -335,8 +310,6 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    NSLog(@" should return");
-    
     NSInteger nextTag = textField.tag + 1;
     
     UIResponder *nextResponder = [textField.superview viewWithTag:nextTag];
@@ -344,9 +317,9 @@
         
         [nextResponder becomeFirstResponder];
     }
-    else {
+    else if (textField.tag == 11){
         // Not found, so remove keyboard.
-        [textField resignFirstResponder];
+        [_pennyTF becomeFirstResponder];
     }
     return NO; // We do not want UITextField to insert line-breaks.
 
@@ -356,11 +329,6 @@
 {
     self.currentTextField = textField;
 }
-
-//-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-//{
-//    
-//}
 
 #pragma mark - Orientation Methods
 
@@ -378,21 +346,6 @@
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-//    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
-//
-//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
-//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
-//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
-//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
-//        
-//    } else if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
-//    {
-//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
-//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
-//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
-//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
-//    }
-    
     [self updateLayoutForNewOrientation: toInterfaceOrientation];
 }
 
@@ -401,15 +354,6 @@
     return YES;
 }
 
-//-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-//{
-//    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
-//        NSLog(@"rotate landscape left");
-//        
-//        CGFloat height = self.scrollView.frame.size.height;
-//        self.scrollView.frame = CGRectMake(0, 0,400,300);
-//    }
-//}
 
 
 @end
