@@ -62,8 +62,22 @@
     self.fiftyDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
     self.hundredDollarTF.inputView = [FDNumberPad defaultFDNumberPad];
     
+    
+    self.pennyTF.delegate = self;
+    self.nickelTF.delegate = self;
+    self.dimeTF.delegate = self;
+    self.quarterTF.delegate = self;
+    self.fiftyCentTF.delegate = self;
+    self.singleDollarTF.delegate = self;
+    self.twoDollarTF.delegate = self;
+    self.fiveDollarTF.delegate = self;
+    self.tenDollarTF.delegate = self;
+    self.twentyDollarTF.delegate = self;
+    self.fiftyDollarTF.delegate = self;
+    self.hundredDollarTF.delegate = self;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(textFieldShouldReturn:)
+                                             selector:@selector(nextButtonPressed)
                                                  name:@"nextPressed"
                                                object:nil];
     
@@ -91,11 +105,44 @@
     _fiftyDollarTF.layer.borderWidth = 1;
     _hundredDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
     _hundredDollarTF.layer.borderWidth = 1;
+    
+    
+    
+//    if (self.interfaceOrientation == UIDeviceOrientationLandscapeLeft) {
+//        
+//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
+//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
+//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
+//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
+//        
+//    } else if (UIDeviceOrientationLandscapeRight)
+//    {
+//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
+//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
+//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
+//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
+//    }
+//}
+
+}
+
+
+
+-(void)nextButtonPressed
+{
+    [self textFieldShouldReturn:self.currentTextField];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    //[self updateLayoutForNewOrientation:self.interfaceOrientation];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-
+    [self updateLayoutForNewOrientation:self.interfaceOrientation];
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.0];
     [UIView setAnimationDelay:0.0];
@@ -114,11 +161,6 @@
     _nickelTF  = nil;
     
     [super viewDidUnload];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -246,31 +288,6 @@
     
 }
 
-//- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-//    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_fiftyCentCount+_singleDollarCount+_twoDollarCount+_fiftyDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
-//    
-//    NSNumberFormatter *currencyFormatter = [[NSNumberFormatter alloc] init];
-//    [currencyFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-//    [currencyFormatter setCurrencySymbol:@""];
-//    
-//    self.pennyLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_pennyCount]]];
-//    self.nickelLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_nickelCount]]];
-//    self.dimeLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_dimeCount]]];
-//    self.quarterLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_quarterCount]]];
-//    self.fiftyCentLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiftyCentCount]]];
-//    self.singleDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_singleDollarCount]]];
-//    self.twoDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twoDollarCount]]];
-//    self.fiveDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiveDollarCount]]];
-//    self.tenDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_tenDollarCount]]];
-//    self.twentyDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twentyDollarCount]]];
-//    self.fiftyDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiftyDollarCount]]];
-//    self.hundredDollarLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_hundredDollarCount]]];
-//    
-//    self.grandTotalLabel.text = [NSString stringWithFormat:@"$%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_grandTotalCount]]];
-//    
-//    return YES;
-//}
-
 - (IBAction)resetButtonPressed:(id)sender {
     NSString *emptyString = [NSString stringWithFormat:@""];
     
@@ -332,24 +349,12 @@
         [textField resignFirstResponder];
     }
     return NO; // We do not want UITextField to insert line-breaks.
-    
-//    if (self.currentTextField.tag == 0)
-//    {
-//        [self.nickelTF becomeFirstResponder];
-//    } else if (self.currentTextField.tag == 1)
-//    {
-//        [self.dimeTF becomeFirstResponder];
-//    } else if (self.currentTextField.tag == 2)
-//    {
-//        [self.quarterTF becomeFirstResponder];
-//    }
-//    return YES;
+
 }
 
--(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+-(void)textFieldDidBeginEditing:(UITextField *)textField
 {
     self.currentTextField = textField;
-    return YES;
 }
 
 //-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
@@ -357,15 +362,43 @@
 //    
 //}
 
--(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+#pragma mark - Orientation Methods
 
+-(void)updateLayoutForNewOrientation:(UIInterfaceOrientation)orientation
+{
+    if (UIInterfaceOrientationIsLandscape(orientation)) {
+        
         self.denominationsView.frame = CGRectMake(0, 0,624,768);
         self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
-        self.textFieldsView.frame = CGRectMake(200, 101, 240, 488);
-        self.labelTotalsView.frame = CGRectMake(420, 101, 215, 551);
+        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
+        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
+        
     }
+}
+
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+//    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+//
+//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
+//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
+//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
+//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
+//        
+//    } else if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+//    {
+//        self.denominationsView.frame = CGRectMake(0, 0,624,768);
+//        self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
+//        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
+//        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
+//    }
+    
+    [self updateLayoutForNewOrientation: toInterfaceOrientation];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
 }
 
 //-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration

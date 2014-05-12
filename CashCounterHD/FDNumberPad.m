@@ -149,7 +149,9 @@
 - (IBAction)numberpadDonePressed:(UIButton *)sender {
     
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"nextPressed" object:nil];
+   [[NSNotificationCenter defaultCenter] postNotificationName:@"nextPressed" object:nil];
+    
+    NSLog(@"Fired!");
     
     //        if (self.targetTextInput) {
     //            [self.targetTextInput resignFirstResponder];

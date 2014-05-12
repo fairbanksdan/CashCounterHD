@@ -40,7 +40,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *grandTotalLabel;
 
-@property (weak, nonatomic) IBOutlet UIButton *resetButton;
-
 @property (weak,nonatomic) UITextField *currentTextField;
 @end
