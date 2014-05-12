@@ -263,7 +263,7 @@
     
 }
 
-- (IBAction)resetButtonPressed:(id)sender {
+- (IBAction)resetButtonPressed {
     NSString *emptyString = [NSString stringWithFormat:@""];
     
     _pennyCount = 0;
@@ -306,6 +306,27 @@
     self.twentyDollarTF.text = emptyString;
     self.fiftyDollarTF.text = emptyString;
     self.hundredDollarTF.text = emptyString;
+}
+
+- (IBAction)resetButton:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Reset"
+                                                    message:nil
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    if (buttonIndex == 1)
+    {
+        [self resetButtonPressed];
+        [_pennyTF becomeFirstResponder];
+        
+    }
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
