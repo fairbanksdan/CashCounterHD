@@ -16,7 +16,6 @@
 @property (strong,nonatomic) NSArray *textFields;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *denominationsView;
-
 @property (weak, nonatomic) IBOutlet FDNumberPad *NumberPad;
 @property (weak, nonatomic) IBOutlet UIView *textFieldsView;
 @property (weak, nonatomic) IBOutlet UIView *labelTotalsView;
@@ -48,7 +47,6 @@
 	
     self.pennyTF.inputView  = [[[NSBundle mainBundle] loadNibNamed:@"FDNumberPad" owner:self options:nil] objectAtIndex:0];
     
-    // The "normal" numberpad
     self.pennyTF.inputView   = [FDNumberPad defaultFDNumberPad];
     self.nickelTF.inputView = [FDNumberPad defaultFDNumberPad];
     self.dimeTF.inputView = [FDNumberPad defaultFDNumberPad];
@@ -108,13 +106,6 @@
 
 }
 
-
-
--(void)nextButtonPressed
-{
-    [self textFieldShouldReturn:self.currentTextField];
-}
-
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -143,6 +134,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - TextField Methods
+
 - (IBAction)pennyCounterTF:(id)sender {
     _str = [_pennyTF text];
     
@@ -263,6 +257,8 @@
     
 }
 
+#pragma mark - Button Actions
+
 - (IBAction)resetButtonPressed {
     NSString *emptyString = [NSString stringWithFormat:@""];
     
@@ -327,6 +323,11 @@
         [_pennyTF becomeFirstResponder];
         
     }
+}
+
+-(void)nextButtonPressed
+{
+    [self textFieldShouldReturn:self.currentTextField];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
