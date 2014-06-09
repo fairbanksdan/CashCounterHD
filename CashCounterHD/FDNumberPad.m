@@ -145,7 +145,7 @@
     }
 }
 
-// The done button was just pressed on the number pad
+// The Next button was just pressed on the number pad
 - (IBAction)numberpadDonePressed:(UIButton *)sender {
     
    [[NSNotificationCenter defaultCenter] postNotificationName:@"nextPressed" object:nil];

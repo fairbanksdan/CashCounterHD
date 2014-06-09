@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet FDNumberPad *NumberPad;
 @property (weak, nonatomic) IBOutlet UIView *textFieldsView;
 @property (weak, nonatomic) IBOutlet UIView *labelTotalsView;
+@property (weak, nonatomic) IBOutlet ADBannerView *adOne;
 
 @end
 
@@ -330,18 +331,27 @@
     [self textFieldShouldReturn:self.currentTextField];
 }
 
+//- (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+//{
+//    NSString *newText = [theTextField.text stringByReplacingCharactersInRange:range withString:string];
+//    self.resetButton.enabled = newText.length > 0;
+//    return YES;
+//}
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSInteger nextTag = textField.tag + 1;
     
     UIResponder *nextResponder = [textField.superview viewWithTag:nextTag];
+
+    
     if (nextResponder) {
         
         [nextResponder becomeFirstResponder];
     }
-    else if (textField.tag == 11){
-        // Not found, so remove keyboard.
+        else if (textField.tag == 11) {
         [_pennyTF becomeFirstResponder];
+        
     }
     return NO; // We do not want UITextField to insert line-breaks.
 
@@ -358,10 +368,10 @@
 {
     if (UIInterfaceOrientationIsLandscape(orientation)) {
         
-        self.denominationsView.frame = CGRectMake(0, 0,624,768);
+        self.denominationsView.frame = CGRectMake(0, 58,624,652);
         self.NumberPad.frame = CGRectMake(624, 200, 400, 352);
-        self.textFieldsView.frame = CGRectMake(190, 101, 240, 488);
-        self.labelTotalsView.frame = CGRectMake(414, 101, 215, 551);
+        self.textFieldsView.frame = CGRectMake(190, 58, 240, 488);
+        self.labelTotalsView.frame = CGRectMake(414, 58, 215, 551);
         
     }
 }
@@ -376,6 +386,34 @@
     return YES;
 }
 
+- (IBAction)backButtonPressed:(id)sender {
 
+    if ([_pennyTF isFirstResponder]) {
+        [_hundredDollarTF becomeFirstResponder];
+    } else if ([_nickelTF isFirstResponder]) {
+        [_pennyTF becomeFirstResponder];
+    } else if ([_dimeTF isFirstResponder]) {
+        [_nickelTF becomeFirstResponder];
+    } else if ([_quarterTF isFirstResponder]) {
+        [_dimeTF becomeFirstResponder];
+    } else if ([_fiftyCentTF isFirstResponder]) {
+        [_quarterTF becomeFirstResponder];
+    } else if ([_singleDollarTF isFirstResponder]) {
+        [_fiftyCentTF becomeFirstResponder];
+    } else if ([_twoDollarTF isFirstResponder]) {
+        [_singleDollarTF becomeFirstResponder];
+    } else if ([_fiveDollarTF isFirstResponder]) {
+        [_twoDollarTF becomeFirstResponder];
+    } else if ([_tenDollarTF isFirstResponder]) {
+        [_fiveDollarTF becomeFirstResponder];
+    } else if ([_twentyDollarTF isFirstResponder]) {
+        [_tenDollarTF becomeFirstResponder];
+    } else if ([_fiftyDollarTF isFirstResponder]) {
+        [_twentyDollarTF becomeFirstResponder];
+    } else {
+        [_fiftyDollarTF becomeFirstResponder];
+    }
+    
+}
 
 @end
