@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D6C3BE461912DA0000B27501"
-               BuildableName = "CashCounterHD.app"
-               BlueprintName = "CashCounterHD"
-               ReferencedContainer = "container:CashCounterHD.xcodeproj">
+               BuildableName = "CashCounterHDLite.app"
+               BlueprintName = "CashCounterHDLite"
+               ReferencedContainer = "container:CashCounterHDLite.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D6C3BE671912DA0000B27501"
-               BuildableName = "CashCounterHDTests.xctest"
-               BlueprintName = "CashCounterHDTests"
-               ReferencedContainer = "container:CashCounterHD.xcodeproj">
+               BuildableName = "CashCounterHDLiteTests.xctest"
+               BlueprintName = "CashCounterHDLiteTests"
+               ReferencedContainer = "container:CashCounterHDLite.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D6C3BE461912DA0000B27501"
-            BuildableName = "CashCounterHD.app"
-            BlueprintName = "CashCounterHD"
-            ReferencedContainer = "container:CashCounterHD.xcodeproj">
+            BuildableName = "CashCounterHDLite.app"
+            BlueprintName = "CashCounterHDLite"
+            ReferencedContainer = "container:CashCounterHDLite.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D6C3BE461912DA0000B27501"
-            BuildableName = "CashCounterHD.app"
-            BlueprintName = "CashCounterHD"
-            ReferencedContainer = "container:CashCounterHD.xcodeproj">
+            BuildableName = "CashCounterHDLite.app"
+            BlueprintName = "CashCounterHDLite"
+            ReferencedContainer = "container:CashCounterHDLite.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D6C3BE461912DA0000B27501"
-            BuildableName = "CashCounterHD.app"
-            BlueprintName = "CashCounterHD"
-            ReferencedContainer = "container:CashCounterHD.xcodeproj">
+            BuildableName = "CashCounterHDLite.app"
+            BlueprintName = "CashCounterHDLite"
+            ReferencedContainer = "container:CashCounterHDLite.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

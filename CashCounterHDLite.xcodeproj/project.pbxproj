@@ -71,23 +71,23 @@
 		D65FF8A91912FA5D005CC2FC /* FDNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDNumberPad.h; sourceTree = "<group>"; };
 		D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNumberPad.m; sourceTree = "<group>"; };
 		D65FF8AE191403C1005CC2FC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		D6C3BE471912DA0000B27501 /* CashCounterHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashCounterHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C3BE471912DA0000B27501 /* CashCounterHDLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashCounterHDLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C3BE4A1912DA0000B27501 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6C3BE4C1912DA0000B27501 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D6C3BE4E1912DA0000B27501 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D6C3BE521912DA0000B27501 /* CashCounterHD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CashCounterHD-Info.plist"; sourceTree = "<group>"; };
+		D6C3BE521912DA0000B27501 /* CashCounterHDLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CashCounterHDLite-Info.plist"; sourceTree = "<group>"; };
 		D6C3BE541912DA0000B27501 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6C3BE561912DA0000B27501 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D6C3BE581912DA0000B27501 /* CashCounterHD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CashCounterHD-Prefix.pch"; sourceTree = "<group>"; };
+		D6C3BE581912DA0000B27501 /* CashCounterHDLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CashCounterHDLite-Prefix.pch"; sourceTree = "<group>"; };
 		D6C3BE591912DA0000B27501 /* FDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAppDelegate.h; sourceTree = "<group>"; };
 		D6C3BE5A1912DA0000B27501 /* FDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAppDelegate.m; sourceTree = "<group>"; };
 		D6C3BE5D1912DA0000B27501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6C3BE5F1912DA0000B27501 /* FDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
 		D6C3BE601912DA0000B27501 /* FDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
 		D6C3BE621912DA0000B27501 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D6C3BE681912DA0000B27501 /* CashCounterHDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashCounterHDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C3BE681912DA0000B27501 /* CashCounterHDLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashCounterHDLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C3BE691912DA0000B27501 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D6C3BE711912DA0000B27501 /* CashCounterHDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CashCounterHDTests-Info.plist"; sourceTree = "<group>"; };
+		D6C3BE711912DA0000B27501 /* CashCounterHDLiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CashCounterHDLiteTests-Info.plist"; sourceTree = "<group>"; };
 		D6C3BE731912DA0000B27501 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6C3BE751912DA0000B27501 /* CashCounterHDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashCounterHDTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +130,8 @@
 		D6C3BE481912DA0000B27501 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3BE471912DA0000B27501 /* CashCounterHD.app */,
-				D6C3BE681912DA0000B27501 /* CashCounterHDTests.xctest */,
+				D6C3BE471912DA0000B27501 /* CashCounterHDLite.app */,
+				D6C3BE681912DA0000B27501 /* CashCounterHDLiteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,10 +183,10 @@
 				D63A8EA11946B72B00F879E4 /* numberPadLeftMiddle 1.0.png */,
 				D63A8E9F1946B60E00F879E4 /* numberPadLeft.png */,
 				D63A8E9D1946B35A00F879E4 /* numberPadLeftMiddle.png */,
-				D6C3BE521912DA0000B27501 /* CashCounterHD-Info.plist */,
+				D6C3BE521912DA0000B27501 /* CashCounterHDLite-Info.plist */,
 				D6C3BE531912DA0000B27501 /* InfoPlist.strings */,
 				D6C3BE561912DA0000B27501 /* main.m */,
-				D6C3BE581912DA0000B27501 /* CashCounterHD-Prefix.pch */,
+				D6C3BE581912DA0000B27501 /* CashCounterHDLite-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 		D6C3BE701912DA0000B27501 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6C3BE711912DA0000B27501 /* CashCounterHDTests-Info.plist */,
+				D6C3BE711912DA0000B27501 /* CashCounterHDLiteTests-Info.plist */,
 				D6C3BE721912DA0000B27501 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -212,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6C3BE461912DA0000B27501 /* CashCounterHD */ = {
+		D6C3BE461912DA0000B27501 /* CashCounterHDLite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6C3BE791912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHD" */;
+			buildConfigurationList = D6C3BE791912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHDLite" */;
 			buildPhases = (
 				D6C3BE431912DA0000B27501 /* Sources */,
 				D6C3BE441912DA0000B27501 /* Frameworks */,
@@ -224,14 +224,14 @@
 			);
 			dependencies = (
 			);
-			name = CashCounterHD;
+			name = CashCounterHDLite;
 			productName = CashCounterHD;
-			productReference = D6C3BE471912DA0000B27501 /* CashCounterHD.app */;
+			productReference = D6C3BE471912DA0000B27501 /* CashCounterHDLite.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6C3BE671912DA0000B27501 /* CashCounterHDTests */ = {
+		D6C3BE671912DA0000B27501 /* CashCounterHDLiteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6C3BE7C1912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHDTests" */;
+			buildConfigurationList = D6C3BE7C1912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHDLiteTests" */;
 			buildPhases = (
 				D6C3BE641912DA0000B27501 /* Sources */,
 				D6C3BE651912DA0000B27501 /* Frameworks */,
@@ -242,9 +242,9 @@
 			dependencies = (
 				D6C3BE6E1912DA0000B27501 /* PBXTargetDependency */,
 			);
-			name = CashCounterHDTests;
+			name = CashCounterHDLiteTests;
 			productName = CashCounterHDTests;
-			productReference = D6C3BE681912DA0000B27501 /* CashCounterHDTests.xctest */;
+			productReference = D6C3BE681912DA0000B27501 /* CashCounterHDLiteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -262,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D6C3BE421912DA0000B27501 /* Build configuration list for PBXProject "CashCounterHD" */;
+			buildConfigurationList = D6C3BE421912DA0000B27501 /* Build configuration list for PBXProject "CashCounterHDLite" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -275,8 +275,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6C3BE461912DA0000B27501 /* CashCounterHD */,
-				D6C3BE671912DA0000B27501 /* CashCounterHDTests */,
+				D6C3BE461912DA0000B27501 /* CashCounterHDLite */,
+				D6C3BE671912DA0000B27501 /* CashCounterHDLiteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -343,7 +343,7 @@
 /* Begin PBXTargetDependency section */
 		D6C3BE6E1912DA0000B27501 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6C3BE461912DA0000B27501 /* CashCounterHD */;
+			target = D6C3BE461912DA0000B27501 /* CashCounterHDLite */;
 			targetProxy = D6C3BE6D1912DA0000B27501 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -454,9 +454,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CashCounterHD/CashCounterHD-Prefix.pch";
-				INFOPLIST_FILE = "CashCounterHD/CashCounterHD-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CashCounterHD/CashCounterHDLite-Prefix.pch";
+				INFOPLIST_FILE = "CashCounterHD/CashCounterHDLite-Info.plist";
+				PRODUCT_NAME = CashCounterHDLite;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -467,9 +467,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CashCounterHD/CashCounterHD-Prefix.pch";
-				INFOPLIST_FILE = "CashCounterHD/CashCounterHD-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CashCounterHD/CashCounterHDLite-Prefix.pch";
+				INFOPLIST_FILE = "CashCounterHD/CashCounterHDLite-Info.plist";
+				PRODUCT_NAME = CashCounterHDLite;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -489,8 +489,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "CashCounterHDTests/CashCounterHDTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CashCounterHDTests/CashCounterHDLiteTests-Info.plist";
+				PRODUCT_NAME = CashCounterHDLiteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -507,8 +507,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CashCounterHD/CashCounterHD-Prefix.pch";
-				INFOPLIST_FILE = "CashCounterHDTests/CashCounterHDTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CashCounterHDTests/CashCounterHDLiteTests-Info.plist";
+				PRODUCT_NAME = CashCounterHDLiteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -517,7 +517,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6C3BE421912DA0000B27501 /* Build configuration list for PBXProject "CashCounterHD" */ = {
+		D6C3BE421912DA0000B27501 /* Build configuration list for PBXProject "CashCounterHDLite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6C3BE771912DA0000B27501 /* Debug */,
@@ -526,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6C3BE791912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHD" */ = {
+		D6C3BE791912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHDLite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6C3BE7A1912DA0000B27501 /* Debug */,
@@ -535,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6C3BE7C1912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHDTests" */ = {
+		D6C3BE7C1912DA0000B27501 /* Build configuration list for PBXNativeTarget "CashCounterHDLiteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6C3BE7D1912DA0000B27501 /* Debug */,
