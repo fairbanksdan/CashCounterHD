@@ -104,6 +104,7 @@
     _fiftyDollarTF.layer.borderWidth = 1;
     _hundredDollarTF.layer.borderColor=[[UIColor grayColor]CGColor];
     _hundredDollarTF.layer.borderWidth = 1;
+    
 
 }
 
