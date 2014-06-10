@@ -152,18 +152,6 @@
     
 }
 
-//- (IBAction)numberpadNextPressed:(UIButton *)sender {
-//    
-//    
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"nextPressed" object:nil];
-//    
-////    if (self.currentTextField.tag == 0)
-////    {
-////        
-////    }
-//    
-//}
-
 #pragma mark - text replacement routines
 
 // Check delegate methods to see if we should change the characters in range

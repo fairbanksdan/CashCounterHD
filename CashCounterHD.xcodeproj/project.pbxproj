@@ -7,24 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D63A8E8619464A2A00F879E4 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A8E8519464A2A00F879E4 /* UIImage+ImageEffects.m */; };
-		D63A8E9A1946590900F879E4 /* Dollar Sign Background Gradient 3.2.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8E991946590900F879E4 /* Dollar Sign Background Gradient 3.2.png */; };
 		D63A8E9E1946B35A00F879E4 /* numberPadLeftMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8E9D1946B35A00F879E4 /* numberPadLeftMiddle.png */; };
 		D63A8EA01946B60E00F879E4 /* numberPadLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8E9F1946B60E00F879E4 /* numberPadLeft.png */; };
 		D63A8EA21946B72B00F879E4 /* numberPadLeftMiddle 1.0.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EA11946B72B00F879E4 /* numberPadLeftMiddle 1.0.png */; };
 		D63A8EA41946B73B00F879E4 /* numberPadRight.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EA31946B73B00F879E4 /* numberPadRight.png */; };
 		D63A8EA61946B74600F879E4 /* numberPadRightMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EA51946B74600F879E4 /* numberPadRightMiddle.png */; };
 		D63A8EA81946B7CC00F879E4 /* numberPadTopMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EA71946B7CC00F879E4 /* numberPadTopMiddle.png */; };
-		D63A8EAA1946B7D300F879E4 /* numberPadZero.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EA91946B7D300F879E4 /* numberPadZero.png */; };
 		D63A8EAC1946BAA500F879E4 /* numberPadReset.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EAB1946BAA500F879E4 /* numberPadReset.png */; };
 		D63A8EAE1946BC5A00F879E4 /* numberPadNext.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EAD1946BC5A00F879E4 /* numberPadNext.png */; };
 		D63A8EB01946BE3700F879E4 /* numberPadBlank.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EAF1946BE3700F879E4 /* numberPadBlank.png */; };
 		D63A8EB21946C49500F879E4 /* numberPadLeftTop.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EB11946C49500F879E4 /* numberPadLeftTop.png */; };
 		D63A8EB41946C4A900F879E4 /* numberPadTopMiddle 2.0.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EB31946C4A900F879E4 /* numberPadTopMiddle 2.0.png */; };
 		D63A8EB61946C4FF00F879E4 /* numberPadTopRight.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EB51946C4FF00F879E4 /* numberPadTopRight.png */; };
-		D63A8EB81946C72C00F879E4 /* Dollar Sign Background Gradient Gray 1.0.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EB71946C72C00F879E4 /* Dollar Sign Background Gradient Gray 1.0.png */; };
-		D63A8EBA1946C8B700F879E4 /* Dollar Sign Background Gradient 4.0.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EB91946C8B700F879E4 /* Dollar Sign Background Gradient 4.0.png */; };
 		D63A8EBC1946C9A700F879E4 /* Background Gradient 5.0.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EBB1946C9A700F879E4 /* Background Gradient 5.0.png */; };
+		D63A8EBE1946D22F00F879E4 /* numberPadZero.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EBD1946D22F00F879E4 /* numberPadZero.png */; };
+		D63A8EC01946D28500F879E4 /* Dollar Sign Background Gradient 3.2.png in Resources */ = {isa = PBXBuildFile; fileRef = D63A8EBF1946D28500F879E4 /* Dollar Sign Background Gradient 3.2.png */; };
 		D65FF8AC1912FA5D005CC2FC /* FDNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */; };
 		D65FF8AF191403C1005CC2FC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65FF8AE191403C1005CC2FC /* iAd.framework */; };
 		D6C3BE4B1912DA0000B27501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3BE4A1912DA0000B27501 /* Foundation.framework */; };
@@ -54,25 +51,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D63A8E8419464A2A00F879E4 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		D63A8E8519464A2A00F879E4 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		D63A8E991946590900F879E4 /* Dollar Sign Background Gradient 3.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dollar Sign Background Gradient 3.2.png"; sourceTree = "<group>"; };
 		D63A8E9D1946B35A00F879E4 /* numberPadLeftMiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadLeftMiddle.png; sourceTree = "<group>"; };
 		D63A8E9F1946B60E00F879E4 /* numberPadLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadLeft.png; sourceTree = "<group>"; };
 		D63A8EA11946B72B00F879E4 /* numberPadLeftMiddle 1.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "numberPadLeftMiddle 1.0.png"; sourceTree = "<group>"; };
 		D63A8EA31946B73B00F879E4 /* numberPadRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadRight.png; sourceTree = "<group>"; };
 		D63A8EA51946B74600F879E4 /* numberPadRightMiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadRightMiddle.png; sourceTree = "<group>"; };
 		D63A8EA71946B7CC00F879E4 /* numberPadTopMiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadTopMiddle.png; sourceTree = "<group>"; };
-		D63A8EA91946B7D300F879E4 /* numberPadZero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadZero.png; sourceTree = "<group>"; };
 		D63A8EAB1946BAA500F879E4 /* numberPadReset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadReset.png; sourceTree = "<group>"; };
 		D63A8EAD1946BC5A00F879E4 /* numberPadNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadNext.png; sourceTree = "<group>"; };
 		D63A8EAF1946BE3700F879E4 /* numberPadBlank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadBlank.png; sourceTree = "<group>"; };
 		D63A8EB11946C49500F879E4 /* numberPadLeftTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadLeftTop.png; sourceTree = "<group>"; };
 		D63A8EB31946C4A900F879E4 /* numberPadTopMiddle 2.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "numberPadTopMiddle 2.0.png"; sourceTree = "<group>"; };
 		D63A8EB51946C4FF00F879E4 /* numberPadTopRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadTopRight.png; sourceTree = "<group>"; };
-		D63A8EB71946C72C00F879E4 /* Dollar Sign Background Gradient Gray 1.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dollar Sign Background Gradient Gray 1.0.png"; sourceTree = "<group>"; };
-		D63A8EB91946C8B700F879E4 /* Dollar Sign Background Gradient 4.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dollar Sign Background Gradient 4.0.png"; sourceTree = "<group>"; };
 		D63A8EBB1946C9A700F879E4 /* Background Gradient 5.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background Gradient 5.0.png"; sourceTree = "<group>"; };
+		D63A8EBD1946D22F00F879E4 /* numberPadZero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberPadZero.png; sourceTree = "<group>"; };
+		D63A8EBF1946D28500F879E4 /* Dollar Sign Background Gradient 3.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dollar Sign Background Gradient 3.2.png"; sourceTree = "<group>"; };
 		D65FF8A91912FA5D005CC2FC /* FDNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDNumberPad.h; sourceTree = "<group>"; };
 		D65FF8AA1912FA5D005CC2FC /* FDNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNumberPad.m; sourceTree = "<group>"; };
 		D65FF8AE191403C1005CC2FC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -156,8 +149,6 @@
 		D6C3BE501912DA0000B27501 /* CashCounterHD */ = {
 			isa = PBXGroup;
 			children = (
-				D63A8E8419464A2A00F879E4 /* UIImage+ImageEffects.h */,
-				D63A8E8519464A2A00F879E4 /* UIImage+ImageEffects.m */,
 				D6C3BE591912DA0000B27501 /* FDAppDelegate.h */,
 				D6C3BE5A1912DA0000B27501 /* FDAppDelegate.m */,
 				D6C3BE5C1912DA0000B27501 /* Main.storyboard */,
@@ -174,23 +165,21 @@
 		D6C3BE511912DA0000B27501 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D63A8EA91946B7D300F879E4 /* numberPadZero.png */,
 				D63A8EAF1946BE3700F879E4 /* numberPadBlank.png */,
 				D63A8EA71946B7CC00F879E4 /* numberPadTopMiddle.png */,
 				D63A8EB11946C49500F879E4 /* numberPadLeftTop.png */,
-				D63A8EB71946C72C00F879E4 /* Dollar Sign Background Gradient Gray 1.0.png */,
+				D63A8EBD1946D22F00F879E4 /* numberPadZero.png */,
 				D63A8EB31946C4A900F879E4 /* numberPadTopMiddle 2.0.png */,
 				D63A8EAD1946BC5A00F879E4 /* numberPadNext.png */,
 				D63A8EA51946B74600F879E4 /* numberPadRightMiddle.png */,
 				D63A8EB51946C4FF00F879E4 /* numberPadTopRight.png */,
 				D63A8EAB1946BAA500F879E4 /* numberPadReset.png */,
+				D63A8EBF1946D28500F879E4 /* Dollar Sign Background Gradient 3.2.png */,
 				D63A8EA31946B73B00F879E4 /* numberPadRight.png */,
 				D63A8EBB1946C9A700F879E4 /* Background Gradient 5.0.png */,
-				D63A8EB91946C8B700F879E4 /* Dollar Sign Background Gradient 4.0.png */,
 				D63A8EA11946B72B00F879E4 /* numberPadLeftMiddle 1.0.png */,
 				D63A8E9F1946B60E00F879E4 /* numberPadLeft.png */,
 				D63A8E9D1946B35A00F879E4 /* numberPadLeftMiddle.png */,
-				D63A8E991946590900F879E4 /* Dollar Sign Background Gradient 3.2.png */,
 				D6C3BE521912DA0000B27501 /* CashCounterHD-Info.plist */,
 				D6C3BE531912DA0000B27501 /* InfoPlist.strings */,
 				D6C3BE561912DA0000B27501 /* main.m */,
@@ -302,15 +291,13 @@
 				D63A8EA01946B60E00F879E4 /* numberPadLeft.png in Resources */,
 				D63A8E9E1946B35A00F879E4 /* numberPadLeftMiddle.png in Resources */,
 				D63A8EA61946B74600F879E4 /* numberPadRightMiddle.png in Resources */,
-				D63A8EAA1946B7D300F879E4 /* numberPadZero.png in Resources */,
+				D63A8EC01946D28500F879E4 /* Dollar Sign Background Gradient 3.2.png in Resources */,
 				D63A8EAE1946BC5A00F879E4 /* numberPadNext.png in Resources */,
-				D63A8E9A1946590900F879E4 /* Dollar Sign Background Gradient 3.2.png in Resources */,
 				D63A8EB41946C4A900F879E4 /* numberPadTopMiddle 2.0.png in Resources */,
 				D63A8EA21946B72B00F879E4 /* numberPadLeftMiddle 1.0.png in Resources */,
-				D63A8EB81946C72C00F879E4 /* Dollar Sign Background Gradient Gray 1.0.png in Resources */,
 				D63A8EB01946BE3700F879E4 /* numberPadBlank.png in Resources */,
+				D63A8EBE1946D22F00F879E4 /* numberPadZero.png in Resources */,
 				D63A8EB61946C4FF00F879E4 /* numberPadTopRight.png in Resources */,
-				D63A8EBA1946C8B700F879E4 /* Dollar Sign Background Gradient 4.0.png in Resources */,
 				D6C3BE5E1912DA0000B27501 /* Main.storyboard in Resources */,
 				D63A8EA41946B73B00F879E4 /* numberPadRight.png in Resources */,
 				D63A8EAC1946BAA500F879E4 /* numberPadReset.png in Resources */,
@@ -333,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65FF8AC1912FA5D005CC2FC /* FDNumberPad.m in Sources */,
-				D63A8E8619464A2A00F879E4 /* UIImage+ImageEffects.m in Sources */,
 				D6C3BE5B1912DA0000B27501 /* FDAppDelegate.m in Sources */,
 				D6C3BE571912DA0000B27501 /* main.m in Sources */,
 				D6C3BE611912DA0000B27501 /* FDViewController.m in Sources */,

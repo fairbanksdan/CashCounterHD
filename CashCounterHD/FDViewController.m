@@ -332,13 +332,6 @@
     [self textFieldShouldReturn:self.currentTextField];
 }
 
-//- (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-//{
-//    NSString *newText = [theTextField.text stringByReplacingCharactersInRange:range withString:string];
-//    self.resetButton.enabled = newText.length > 0;
-//    return YES;
-//}
-
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSInteger nextTag = textField.tag + 1;
